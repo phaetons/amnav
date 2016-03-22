@@ -19,6 +19,16 @@
     }) }}
 {% endif %}
 
+{{ forms.textField({
+    id: 'linkTitle',
+    name: 'linkTitle',
+    label: "Link Title"|t,
+    value: node.linkTitle,
+    instructions: 'Add a title to the link.'|t
+}) }}
+
+
+
 {% if not node.elementId|length %}
 	{{ forms.textField({
 	    id: 'url',

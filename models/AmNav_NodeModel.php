@@ -13,6 +13,7 @@ class AmNav_NodeModel extends BaseModel
             'name'        => AttributeType::String,
             'url'         => AttributeType::String,
             'listClass'   => AttributeType::String,
+            'linkTitle'   => AttributeType::String,
             'blank'       => AttributeType::Bool,
             'enabled'     => AttributeType::Bool,
             'elementId'   => AttributeType::Number,

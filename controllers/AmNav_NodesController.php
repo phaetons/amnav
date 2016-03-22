@@ -132,6 +132,11 @@ class AmNav_NodesController extends BaseController
             $node->setAttribute('listClass', $attributes['listClass']);
         }
 
+        // Is there a list item class available?
+        if (isset($attributes['linkTitle'])) {
+            $node->setAttribute('linkTitle', $attributes['linkTitle']);
+        }
+
         // Save the node!
         $returnData = array('success' => false);
         if (($node = craft()->amNav_node->saveNode($node)) !== false) {
